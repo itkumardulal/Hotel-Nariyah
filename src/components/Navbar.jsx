@@ -34,7 +34,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
 
-          <Link to="/" className="flex items-center space-x-2 cursor-pointer">
+          {/* Logo */}
+          <div
+            onClick={() => scrollToSection("home")}
+            className="flex items-center space-x-2 cursor-pointer"
+          >
             <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-white rounded-full flex items-center justify-center shadow">
               <img
                 src={logo}
@@ -45,7 +49,7 @@ const Navbar = () => {
             <span className="font-bold text-lg sm:text-xl md:text-2xl text-red-700">
               Hotel Nariyah
             </span>
-          </Link>
+          </div>
 
           {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center space-x-8 cursor-pointer">
